@@ -116,24 +116,26 @@ function closeMenu(){
 
 const home = document.querySelector('#home')
 const myself = document.querySelector('#myself')
-const projects = document.querySelector('#projects')
+const projects = document.querySelectorAll('#projects')
 const articles = document.querySelector('#articles')
 const contact = document.querySelector('#contact')
 
 home.addEventListener('click', () => {
-  window.scroll(top)
+  //Here goes animation
 })
 myself.addEventListener('click', () => {
-  window.scroll(top)
+  //Here goes animation
 })
-projects.addEventListener('click', () => {
-  window.scroll(top)
-})
+projects.forEach(link => {
+  link.addEventListener('click', () => {
+    //Here goes animation
+  })
+});
 articles.addEventListener('click', () => {
-  window.scroll(top)
+  //Here goes animation
 })
 contact.addEventListener('click', () => {
-
+  //Here goes animation
 })
 
 const backStart = document.querySelector('#backStart')

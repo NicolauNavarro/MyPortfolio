@@ -85,7 +85,7 @@ html.lenis body {
   --border: 2px solid var(--active-white);
   --broken-white: #ffffff90;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 h1 {
@@ -183,15 +183,15 @@ body {
   animation: --changebgcont 1.5s ease forwards;
   opacity: 0;
 }
-@keyframes --changebgcont{
-  20%{
+@keyframes --changebgcont {
+  20% {
     opacity: 1;
   }
-  80%{
+  80% {
     background-color: var(--low-white);
     opacity: 1;
   }
-  100%{
+  100% {
     background-color: transparent;
     opacity: 1;
   }
@@ -208,21 +208,21 @@ nav p:first-child,
 nav .line:first-child,
 nav #menu,
 nav .switch,
-nav .island{
+nav .island {
   animation: --fade-up ease forwards;
   animation-timeline: scroll();
   animation-range: 0px 20px;
 }
-@keyframes --fade-up{
-  to{
+@keyframes --fade-up {
+  to {
     opacity: 0;
     transform: translateY(10px);
-}
+  }
 }
 nav p {
   color: var(--broken-white);
 }
-nav .menu{
+nav .menu {
   position: absolute;
   width: 70vw;
   height: 100%;
@@ -232,7 +232,7 @@ nav .menu{
   flex-direction: row;
   justify-content: center;
 }
-nav .menu .line{
+nav .menu .line {
   position: absolute;
   width: 100%;
   height: 2px;
@@ -249,10 +249,10 @@ nav .menu .line{
     #92929200 100%
   );
 }
-nav .menu .interactive span{
+nav .menu .interactive span {
   scale: 1.5;
 }
-nav .menu .interactive{
+nav .menu .interactive {
   position: absolute;
   top: 5px;
   scale: 0.8;
@@ -265,15 +265,15 @@ nav .menu .interactive{
   align-items: center;
   justify-content: center;
 }
-nav .menu .interactive:hover{
+nav .menu .interactive:hover {
   scale: 0.8;
   rotate: 0deg;
 }
-nav .menu .interactive.opened{
+nav .menu .interactive.opened {
   rotate: 45deg;
   top: 12px;
 }
-nav .menu .island{
+nav .menu .island {
   position: absolute;
   margin: none;
   width: 25vw;
@@ -289,7 +289,7 @@ nav .menu .island{
   animation: none;
   gap: 6px;
 }
-nav .menu .island.closed{
+nav .menu .island.closed {
   width: 40px;
   min-height: 40px;
   height: 50px;
@@ -298,15 +298,15 @@ nav .menu .island.closed{
   top: 10px;
   opacity: 0;
 }
-nav .menu .island.closed a{
+nav .menu .island.closed a {
   scale: 0.2;
   opacity: 0;
 }
-nav .menu .island.closed .line{
+nav .menu .island.closed .line {
   scale: 0.2;
   opacity: 0;
 }
-nav .menu .island a{
+nav .menu .island a {
   color: var(--gray);
   width: 100%;
   padding: 7px 10px;
@@ -319,13 +319,13 @@ nav .menu .island a{
   flex-direction: row;
   gap: 10px;
 }
-nav .menu .island a:hover{
+nav .menu .island a:hover {
   background-color: var(--low-white);
 }
-nav .menu .island span{
+nav .menu .island span {
   color: var(--active-white);
 }
-nav .menu .island .line{
+nav .menu .island .line {
   position: absolute;
   width: 80%;
   bottom: 0;
@@ -340,10 +340,6 @@ nav .menu .island .line{
   );
   opacity: 0.6;
 }
-
-
-
-
 
 .switch {
   height: 20px;
@@ -410,14 +406,10 @@ section {
   gap: var(--gap);
 }
 
-
-
-
-
 .hero {
   overflow: hidden;
   text-align: center;
-  background-color:  var(--dark);
+  background-color: var(--dark);
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -427,7 +419,7 @@ section {
   position: relative;
   transition: 1.5s ease;
 }
-.hero.beforee{
+.hero.beforee {
   scale: 0.4;
   border-radius: 50px;
   rotate: 15deg;
@@ -435,7 +427,7 @@ section {
   opacity: 0;
   transform: translateY(40vh);
 }
-.hero h1::after{
+.hero h1::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -452,7 +444,7 @@ section {
   );
 }
 
-.hero img{
+.hero img {
   position: absolute;
   z-index: 1;
   animation: --go-down ease forwards;
@@ -466,7 +458,7 @@ section {
   margin-top: 5vh;
 }
 @keyframes --go-down {
-  50%{
+  50% {
     opacity: 0;
   }
   100% {
@@ -482,15 +474,15 @@ section {
   transition: 3s ease;
 }
 @keyframes --fade-out {
-  50%{
+  50% {
     opacity: 0;
   }
-  100%{
+  100% {
     transform: translateX(-100%);
     opacity: 0;
   }
 }
-.beforee .title{
+.beforee .title {
   transform: translateX(-100%);
   opacity: 0;
 }
@@ -511,7 +503,7 @@ section {
   margin-top: -5px;
   line-height: 1.1;
 }
-.hero p{
+.hero p {
   font-size: 1.2rem;
 }
 .hero .title {
@@ -523,11 +515,6 @@ section {
   padding: 5px;
   display: none;
 }
-
-
-
-
-
 
 .snd-section {
   background-color: var(--dark);
@@ -863,25 +850,23 @@ button.interactive span {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.sxt-section .contact .last:not(:last-child) .interactive{
+.sxt-section .contact .last:not(:last-child) .interactive {
   opacity: 0;
   margin-left: -200px;
 }
-.sxt-section .contact .last:last-child{
+.sxt-section .contact .last:last-child {
   position: absolute;
   bottom: 0px;
   width: 100%;
   left: 0px;
   bottom: -60px;
 }
-.sxt-section .contact .last:last-child p{
+.sxt-section .contact .last:last-child p {
   animation-range: -13% 12%;
 }
-.sxt-section .contact .last:last-child .interactive{
+.sxt-section .contact .last:last-child .interactive {
   animation-range: -8% 17%;
 }
-
-
 
 .sxt-section .contact .actions {
   position: relative;
@@ -898,7 +883,7 @@ button.interactive span {
   align-items: flex-end;
   text-align: end;
 }
-.sxt-section .contact .actions .links.convince::before{
+.sxt-section .contact .actions .links.convince::before {
   left: unset;
   right: 0px;
 }
@@ -931,8 +916,8 @@ button.interactive span {
   animation-timeline: view();
   animation-range: 10px 30px;
 }
-@keyframes --flash-line{
-  to{
+@keyframes --flash-line {
+  to {
     left: 30px;
     width: calc(100% - 60px);
   }
@@ -946,23 +931,6 @@ button.interactive span {
   color: var(--active-white);
   z-index: 4;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .load {
   width: 200px;
